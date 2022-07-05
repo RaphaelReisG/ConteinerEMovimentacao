@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+table{
+	border: 1px solid black;
+	border-radius: 10px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td{
+	width: 200px;
+	border: 1px solid black;
+}
+
+.botao{
+	background-color: #00AAAA;
+	border: 1px solid black;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" type="text/css" href="estilo1.css">
+<meta charset="utf-8">
+<title>Novo Conteiner</title>
+</head>
+<body>
+	<h1>Novo Conteiner</h1>
+	<form name="frmConteiner" action="insertConteiner">
+		<label>Nº Conteiner</label>
+		<input type="text" name="numero" pattern="^([A-Z]{4}[0-9]{7})$" placeholder="ABCD1234567" required>
+		<br><br>
+		<label>Cliente:</label>
+		<input type="text" name="cliente" pattern="[A-z ]*"  placeholder="Cliente" required>
+		<br><br>
+		<label>Tipo:</label>
+		<select name="tipo">
+			<option value="10">10</option>
+			<option value="20">20</option>
+		</select>
+		<br><br>
+		<label>Status:</label>
+		<select name="estado">
+			<option value="Cheio">Cheio</option>
+			<option value="Vazio">Vazio</option>
+		</select>
+		<br><br>
+		<label>Categoria:</label>
+		<select name="categoria">
+			<option value="Importação">Importação</option>
+			<option value="Exportação">Exportação</option>
+		</select>
+		<input  type="submit" value="Criar">
+	</form>
+	
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
